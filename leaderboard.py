@@ -46,7 +46,7 @@ async def on_ready():
 
 @bot.command()
 async def send(ctx):
-        leaderboardsend = open("FILE", "r")
+        leaderboardsend = open(FILE, "r")
         if ctx.channel.id == CHANNEL: # Registry channel
             await ctx.channel.purge() # Get rid of previous messages before sending the new leaderboard
             print("Messages cleared")
